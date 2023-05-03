@@ -1,0 +1,5 @@
+node_modules
+packages/*/node_modules
+packages/*/test
+packages/*/__test__
+example/node_modules

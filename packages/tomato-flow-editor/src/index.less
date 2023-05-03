@@ -1,0 +1,33 @@
+.tomato-flow-editor {
+  height: 100%;
+  overflow: hidden;
+  .tomato-flow-editor-container {
+    position: relative;
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-flow: row;
+    grid-template-columns: 60px 260px calc(100% - 320px);
+    overflow: hidden;
+  }
+
+  #tomato-g6-editor {
+    position: relative;
+  }
+
+  .x6-node-selected {
+    box-sizing: content-box !important;
+    margin-top: -4px;
+    margin-left: -4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    border: 2px dashed #feb663;
+    box-shadow: 2px 2px 5px #d3d3d3
+  }
+
+  .x6-widget-minimap {
+    position: fixed;
+    bottom: 36px;
+    right: 36px;
+    z-index: 99999;
+  }
+}

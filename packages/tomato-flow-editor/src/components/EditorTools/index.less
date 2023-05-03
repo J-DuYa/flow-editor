@@ -1,0 +1,76 @@
+#flow-editor-tools {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+  height: 100%;
+  width: 260px;
+  box-sizing: border-box;
+  border-right: 1px solid #F4F4F4;
+  z-index: 999;
+  user-select: none;
+
+  .flow-editor-menu {
+    margin-bottom: 10px;
+    width: 100%;
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 5% 12px;
+      font-size: 14px;
+      font-weight: 400;
+      i {
+        position: relative;
+        top: 1px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  // list 卡片样式
+  .flow-tools-item {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    padding: 0 12px;
+    height: 36px;
+    width: 90%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #fff;
+    &:hover {
+      box-shadow: 0 2px 8px #f0f1f2;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+  }
+
+  .flow-tools-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .flow-tools-preview {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+  }
+
+  .flow-tools-desc {
+    margin-left: 4px;
+    color: #666;
+    font-size: 12px;
+  }
+
+  .flow-editor-remark {
+    margin-left: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}

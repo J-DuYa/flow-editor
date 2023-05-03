@@ -1,0 +1,35 @@
+.tomato-menu {
+  width: 60px;
+  border-right: 1px solid #F4F4F4;
+  ul {
+    margin: 4px;
+    list-style: none;
+    padding: 4px 0;
+    li {
+      margin-top: 4px;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      i {
+        font-size: 16px;
+      }
+
+      &:hover {
+        background: #F4F4F4;
+      }
+
+      &.select {
+        background: #F4F4F4;
+        box-shadow: 0 1px 2px 0 #E4E4E4;
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
